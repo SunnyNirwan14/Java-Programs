@@ -6,117 +6,20 @@ public class Practice10
 	
 	public static void main(String[] args) 
 	{
-		int a[]= {250,255,650,260,270};
+		int a[]= {250,700,650,260,270};
 		int b=a.length;
 		System.out.println("The size of array "+b);
 		System.out.println("===========================");
+		int max=a[0];
 		
-		if (a[0]>a[1])
+		for (int i=0; i<b; i++)
 		{
-			if (a[0]>a[2])
+			if (a[i]>max)
 			{
-				if (a[0]>a[3])
-				{
-					if (a[0]>a[4])
-					{
-						System.out.println(a[0]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-				else
-				{
-					if (a[3]>a[4])
-					{
-						System.out.println(a[3]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-			}
-			else
-			{
-				if (a[2]>a[3])
-				{
-					if (a[2]>a[4])
-					{
-						System.out.println(a[2]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-				else
-				{
-					if (a[3]>a[4])
-					{
-						System.out.println(a[3]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
+				max=a[i];
 			}
 		}
-		else
-		{
-			if (a[1]>a[2])
-			{
-				if (a[1]>a[3])
-				{
-					if (a[1]>a[4])
-					{
-						System.out.println(a[1]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-				else
-				{
-					if (a[3]>a[4])
-					{
-						System.out.println(a[3]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-			}
-			else
-			{
-				if (a[2]>a[3])
-				{
-					if (a[2]>a[4])
-					{
-						System.out.println(a[2]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-				else
-				{
-					if (a[3]>a[4])
-					{
-						System.out.println(a[3]+" is the largest number");
-					}
-					else
-					{
-						System.out.println(a[4]+" is the largest number");
-					}
-				}
-			}
-		}
+		System.out.println(max+" is the largest value from array");
 		
 	}
 

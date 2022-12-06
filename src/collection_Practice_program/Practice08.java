@@ -8,13 +8,13 @@ public class Practice08
 	{
 		//Find duplicate number from array
 		
-		int a[]= {10,20,30,40,50,60,20,70};
+		int a[]= {10,20,30,40,50,60,20,10};
 		int size=a.length;
 		System.out.println("The size of array is "+size);
 		
-		for (int i=0; i<=(size-1); i++)
+		for (int i=0; i<size; i++)
 		{
-			for (int j=i+1; j<(size-1); j++)
+			for (int j=i+1; j<size; j++)
 			{
 				if (a[i]==a[j])
 				{

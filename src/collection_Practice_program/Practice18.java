@@ -7,18 +7,24 @@ public class Practice18
 	public static void main(String[] args) 
 	{
 		int a[]= {100,25,43,65,1};
+		int temp=0;
 		
-		for (int b=100; b>=1; b--)
+		for (int b=0; b<a.length; b++)
 		{
-			for (int c=(a.length-1); c>=0; c--)
+			for (int c=b+1; c<a.length; c++)
 			{
-				if (a[c]==b)
+				if (a[b]<a[c])
 				{
-					System.out.println(b);
+					temp=a[b];
+					a[b]=a[c];
+					a[c]=temp;
 				}
 			}
 		}
-		
+		for (int i=0; i<a.length; i++)
+		{
+			System.out.println(a[i]);
+		}
 	}
 
 }

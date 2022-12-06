@@ -19,11 +19,11 @@ public class Practice15
 		 
 		  if(temp==sum)
 		  {
-		   System.out.println("palindrome number ");    
+		   System.out.println(sum+" palindrome number ");    
 		  }
 		  else
 		  {
-		   System.out.println("not palindrome"); 
+		   System.out.println(sum+" not palindrome"); 
 		  }
 	}
 
