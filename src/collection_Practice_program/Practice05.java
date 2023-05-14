@@ -3,6 +3,7 @@ package collection_Practice_program;
 public class Practice05 
 {
 	//Fibonacci series
+	//output should be like
 	
 	public static void main(String[] args) 
 	{
